@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .form-box {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form</h1>
+
+    <div class="form-box">
+        <h2>Enter Your Personal Details</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+
+            <label>Age:</label>
+            <input type="number" name="age" placeholder="Enter your age">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
